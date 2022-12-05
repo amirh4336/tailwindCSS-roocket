@@ -1,7 +1,7 @@
 {
   "scripts": {
     "watch": "npx tailwindcss -i ./src/assets/style.scss -o ./src/css/main.css --watch",
-    "serve": "live-server ./src"
+    "serve": "live-server ./src --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4"

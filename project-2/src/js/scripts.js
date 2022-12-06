@@ -21,20 +21,15 @@ btnAvatar.onclick = function () {
 
 List.onclick = function () {
     dashboard.classList.add('d-absolute')
-    dashboard.classList.add('d-absolute')
-    dashboard.classList.remove('smNone')
+    dashboard.classList.remove('-translate-x-full')
     body.classList.add('overflow-hidden')
 }
 
 btnClose.onclick = function () {
-    if (dashboard.classList.contains('d-absolute')) {
-        dashboard.classList.add('smNone')
+    let x = window.matchMedia("(max-width: 768px)")
+    if (x.matches) {
+        dashboard.classList.add('-translate-x-full')
+        
         body.classList.remove('overflow-hidden')
     }
-}
-
-let x = window.matchMedia("(max-width: 668px)")
-
-if (! x.matches) {
-    dashboard.classList.remove('absolute')
 }

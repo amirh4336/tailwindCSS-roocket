@@ -6,3 +6,25 @@
 .d-none {
     display: none !important;
 }
+
+
+@media screen and (max-width : 768px) {
+    .smNone {
+        display: none !important;
+    }
+    .d-absolute {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        min-height: 100vh;
+        overflow: hidden;
+        background-color: rgba(178, 178, 178, 0.626);
+    }
+}
+@media screen and (min-width : 768px) {
+
+    .mdNone {
+        display: none !important;
+    }
+
+}
